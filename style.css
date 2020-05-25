@@ -1,0 +1,113 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+h1 {
+    font-style: italic;
+    color: #373fff;
+}
+
+.alert-box {
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    background-color: #BEA3F0;
+    /* border: 1px solid #BEA3F0; */
+    box-shadow: 2px 0px 1px inset;
+    line-height: 148px;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    padding-top: 20vh;
+}
+
+.welcome-screen {
+    width: 600px;
+    height: 300px;
+    background-color: #c2c2c2;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#start {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.player-names {
+    width: 363px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+input {
+    height: 49px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+#firstPlayer {
+    margin-right: 20px;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.game-box {
+    display: none;
+}
+.inner-box {
+    width: 380px;
+    height: 380px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto;
+}
+.box {
+    text-align: center;
+    font-size: 110px;
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+}
+
+#winnerAlert {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.players {
+    width: 300px;
+    padding-bottom: 30px;
+    font-size: 23px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.players > span {
+    flex: 1;
+}

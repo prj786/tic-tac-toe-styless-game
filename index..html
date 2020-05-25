@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>very ugly Game!!!</h1>
+<pre>but productive</pre>
+<div class="outer-box">
+    <div class="welcome-screen" id="info">
+        <div class="player-names">
+            <div class="player-name">
+                <label for="firstPlayer">Player One Name</label>
+                <input type="text" id="firstPlayer" placeholder="player name" />
+            </div>
+            <div class="player-name">
+                <label for="scndPlayer">Player Two Name</label>
+                <input type="text" id="scndPlayer" placeholder="player name" />
+            </div>
+        </div>
+        <audio id="sound">
+            <source src="https://cdn.glitch.com/09ec9feb-e7c8-479c-9962-3cbea414aefe%2Fp2click.wav?v=1589210027593" type="audio/mpeg">
+        </audio>
+        <audio id="win">
+            <source src="https://cdn.glitch.com/09ec9feb-e7c8-479c-9962-3cbea414aefe%2Ftadaa.flac?v=1589211625241" type="audio/mpeg">
+        </audio>
+        <audio id="tie">
+            <source src="https://cdn.glitch.com/09ec9feb-e7c8-479c-9962-3cbea414aefe%2Fp2click.wav?v=1589210027593" type="audio/mpeg">
+        </audio>
+        <button id="start">
+            start
+        </button>
+    </div>
+
+    <div class="game-box" id="gameBox">
+        <div class="players">
+            <span id="playerOne" style="color: green"></span>
+            <span id="playerTwo" style="text-align: right"></span>
+        </div>
+        <div class="inner-box">
+            <div class="box" id="1" onclick="testClick(1)"></div>
+            <div class="box" id="2" onclick="testClick(2)"></div>
+            <div class="box" id="3" onclick="testClick(3)"></div>
+            <div class="box" id="4" onclick="testClick(4)"></div>
+            <div class="box" id="5" onclick="testClick(5)"></div>
+            <div class="box" id="6" onclick="testClick(6)"></div>
+            <div class="box" id="7" onclick="testClick(7)"></div>
+            <div class="box" id="8" onclick="testClick(8)"></div>
+            <div class="box" id="9" onclick="testClick(9)"></div>
+        </div>
+    </div>
+    <div id="winnerAlert">
+        <div class="alert-box">
+            <span id="winnerText"></span>
+            <button id="restart">
+                restart
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- include the Glitch button to show what the webpage is about and
+      to make it easier for folks to view source and remix -->
+<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+<script src="app.js"></script>
+</body>
+</html>
